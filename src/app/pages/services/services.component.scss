@@ -1,0 +1,87 @@
+/* src/app/pages/services/services.component.scss */
+.page-container {
+    overflow-x: hidden;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .services-section {
+    padding: 5rem 0;
+    background-color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    
+    &.animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .services-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 3rem;
+      
+      .services-text {
+        flex: 1 1 500px;
+        
+        h2 {
+          font-size: 2.2rem;
+          font-weight: 700;
+          margin: 0 0 1.5rem;
+          position: relative;
+          
+          &:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, #f39c12, #e67e22);
+          }
+        }
+        
+        p {
+          margin-bottom: 1.5rem;
+          line-height: 1.8;
+          font-size: 1.1rem;
+          color: #555;
+        }
+        
+        .services-cta {
+          margin-top: 2.5rem;
+        }
+      }
+      
+      .services-image {
+        flex: 0 1 400px;
+        
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .services-section {
+      padding: 3rem 0;
+      
+      .services-content {
+        .services-text {
+          h2 {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
