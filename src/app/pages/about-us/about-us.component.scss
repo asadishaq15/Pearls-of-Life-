@@ -59,6 +59,11 @@
     .cta-wrapper {
       margin-top: 3rem;
       text-align: center;
+      
+      /* Updated CTA button styling to match the reference image */
+      app-button {
+        background-color: #e79640; /* Updated to match the orange from the reference */
+      }
     }
   }
   
@@ -73,8 +78,8 @@
     }
     
     .testimonial-header {
-      background: linear-gradient(90deg, #f39c12, #e67e22);
-      padding: 2rem 0;
+      background: #e79640;
+      padding: 6rem 0;
       text-align: center;
       
       h2 {
@@ -86,7 +91,7 @@
     }
     
     .founder-container {
-      background-color: #f8965a;
+      background-color: #C55A11;
       color: white;
       padding: 4rem 0;
       
